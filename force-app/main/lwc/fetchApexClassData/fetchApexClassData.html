@@ -1,0 +1,19 @@
+<template>
+    
+    <lightning-card title="Account List using for:each" icon-name="custom:custom63">
+        <div class="slds-m-around_medium">
+            <template if:true={accounts.data}>
+                <template for:each={wirepro.data} for:item="acc">
+                  
+                    <div class="slds-item" key={acc.id}>
+
+                        <strong>{acc.Name}</strong>
+                     
+                    </div>
+                </template>
+            </template>
+          
+        </div>
+    </lightning-card>
+
+</template>
